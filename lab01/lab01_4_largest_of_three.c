@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     double a, b, c;
     printf("Enter 3 numbers: ");
     scanf("%lf %lf %lf", &a, &b, &c);
@@ -17,5 +17,4 @@ int main() {
             printf("%.2lf\n", c);
         }
     }
-    return 0;
 }

@@ -2,7 +2,7 @@
 
 double get_net_salary(double bs, double da, double hra, double pf);
 
-int main() {
+int main(void) {
     double base_salary;
     printf("Enter base salary: ");
     scanf("%lf", &base_salary);
@@ -10,8 +10,6 @@ int main() {
     double da = 0.25f, hra = 0.15f, pf = 0.1f;
     // pf -> provident fund (base_salary+da+hra)
     printf("net salary = %.3lf\n", get_net_salary(base_salary, da, hra, pf));
-
-    return 0;
 }
 
 double get_net_salary(double bs, double da, double hra, double pf) {

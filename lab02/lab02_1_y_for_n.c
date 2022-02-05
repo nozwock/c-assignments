@@ -2,7 +2,7 @@
 #include <stdio.h>
 // use -lm flag for linking math.h
 
-int main() {
+int main(void) {
     double a, x, b, y;
     int n;
     printf("Enter value of a, x, b, n respectively: ");
@@ -31,5 +31,4 @@ int main() {
         }
     }
     printf("y = %.2lf\n", y);
-    return 0;
 }

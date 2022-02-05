@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     float phy_marks, che_marks, mat_marks;
     printf("Enter marks for physics, chemistry, maths: ");
     scanf("%f %f %f", &phy_marks, &che_marks, &mat_marks);
@@ -12,6 +12,4 @@ int main() {
     } else {
         printf("not eligible for course\n");
     }
-
-    return 0;
 }
