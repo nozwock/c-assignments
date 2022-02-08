@@ -3,7 +3,7 @@
 int main(void) {
     int n;
     printf("Enter upper limit(nth element): ");
-    scanf("%lld", &n);
+    scanf("%d", &n);
 
     unsigned long long fib[n];
 
