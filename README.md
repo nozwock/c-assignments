@@ -15,7 +15,7 @@ College C assignments; nothing special :shrug:
 |       | 7 | Write a program to construct a Fibonacci series upto n terms.
 |       | 8 | Write a program to find whether the number is Armstrong number. |
 |       | 9 | Write a program to generate sum of series 1!+2!+3!+--------------n! |
-|       | 10 | Write a program to find the sum of following series 1-X1/1!+X2/2!-............Xn/n!. |
+|       | 10 | Write a program to find the sum of following series (1)-(x^1/1!)+(x^2/2!)-............(x^n/n)! |
 | LAB 3 | 11 | Write a program to print the entire prime no between 1 and 300. |
 |       | 12 | Write a program to print out all the Armstrong number between 100 and 500. |
 |       | 13 | Write a program to draw the following figure:</br><pre>3 2 1<br>2 1<br>1<br>  \*<br> \* \*<br>\* \* \*<br></pre> |
