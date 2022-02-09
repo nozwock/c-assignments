@@ -1,8 +1,8 @@
+#include "../helpers.h"
 #include <math.h>
-#include <stdbool.h>
 #include <stdio.h>
-
-bool is_prime(int n);
+// compile via:
+// gcc lab03_11-1_prime_nums_sq_root.c ../helpers.c -lm
 
 int main(void) {
     for (int i = 1; i <= 300; i++) {
@@ -11,16 +11,4 @@ int main(void) {
         }
     }
     printf("\n");
-}
-
-bool is_prime(int n) {
-    if (n < 1) {
-        return false;
-    }
-    for (int i = 2; i <= sqrt(n); i++) {
-        if (n % i == 0) {
-            return false;
-        }
-    }
-    return true;
 }
