@@ -1,18 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-unsigned long long *get_fibonacci_arr(int n) {
-    unsigned long long *fib = malloc(n * sizeof(unsigned long long));
-
-    fib[0] = 0;
-    fib[1] = 1;
-
-    for (int i = 2; i < n; i++) {
-        fib[i] = fib[i - 1] + fib[i - 2];
-    }
-
-    return fib;
-}
+unsigned long long *get_fibonacci_arr(int n);
 
 int main(void) {
     int n;
@@ -24,4 +13,18 @@ int main(void) {
         printf("%lld, ", fib[i]);
     }
     printf("\n");
+    free(fib);
+}
+
+unsigned long long *get_fibonacci_arr(int n) {
+    unsigned long long *fib = malloc(n * sizeof(unsigned long long));
+
+    fib[0] = 0;
+    fib[1] = 1;
+
+    for (int i = 2; i < n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+
+    return fib;
 }

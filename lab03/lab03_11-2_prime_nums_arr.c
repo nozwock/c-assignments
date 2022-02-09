@@ -17,6 +17,7 @@ int main(void) {
         printf("%d, ", b._arr[i]);
     }
     printf("\n");
+    free(b._arr);
 }
 
 int get_approx_num_of_primes(int n) {
