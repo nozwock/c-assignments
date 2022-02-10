@@ -3,21 +3,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct prime_arr {
+typedef struct PrimeArr {
     int *_arr;
     size_t arr_size;
-} prime_arr;
+} PrimeArr;
 
 int get_approx_num_of_primes(int n);
-prime_arr get_prime_arr(int lower, int upper);
+PrimeArr get_prime_arr(int lower, int upper);
 
 int main(void) {
-    prime_arr b = get_prime_arr(1, 300);
-    for (int i = 0; i < b.arr_size; i++) {
-        printf("%d, ", b._arr[i]);
+    PrimeArr prime = get_prime_arr(1, 300);
+    for (int i = 0; i < prime.arr_size; i++) {
+        printf("%d, ", prime._arr[i]);
     }
     printf("\n");
-    free(b._arr);
+    free(prime._arr);
 }
 
 int get_approx_num_of_primes(int n) {
@@ -27,10 +27,8 @@ int get_approx_num_of_primes(int n) {
     return (n / (log(n) - 1)) * 1.01;
 }
 
-prime_arr get_prime_arr(int lower, int upper) {
-    // goin to dynamically increase size of arr whenever needed
-    // instead of this...
-    prime_arr out;
+PrimeArr get_prime_arr(int lower, int upper) {
+    PrimeArr out;
     out.arr_size = 0;
     out._arr = calloc(out.arr_size, sizeof(int));
     int k = 0;
