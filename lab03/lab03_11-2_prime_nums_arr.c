@@ -3,16 +3,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct PrimeArr {
+typedef struct ArrWithSize {
     int *_arr;
     size_t arr_size;
-} PrimeArr;
+} ArrWithSize;
 
 int get_approx_num_of_primes(int n);
-PrimeArr get_prime_arr(int lower, int upper);
+ArrWithSize get_prime_arr(int lower, int upper);
 
 int main(void) {
-    PrimeArr prime = get_prime_arr(1, 300);
+    ArrWithSize prime = get_prime_arr(1, 300);
     for (int i = 0; i < prime.arr_size; i++) {
         printf("%d, ", prime._arr[i]);
     }
@@ -27,10 +27,10 @@ int get_approx_num_of_primes(int n) {
     return (n / (log(n) - 1)) * 1.01;
 }
 
-PrimeArr get_prime_arr(int lower, int upper) {
-    PrimeArr out;
-    out.arr_size = 0;
-    out._arr = calloc(out.arr_size, sizeof(int));
+ArrWithSize get_prime_arr(int lower, int upper) {
+    ArrWithSize prime;
+    prime.arr_size = 0;
+    prime._arr = calloc(prime.arr_size, sizeof(int));
     int k = 0;
     for (int i = lower; i < upper; i++) {
         // not a great impl but whatever
@@ -41,11 +41,11 @@ PrimeArr get_prime_arr(int lower, int upper) {
             }
         }
         if (i % j != 0) {
-            out.arr_size++;
-            out._arr = realloc(out._arr, out.arr_size * (sizeof(int)));
-            out._arr[k] = i;
+            prime.arr_size++;
+            prime._arr = realloc(prime._arr, prime.arr_size * sizeof(int));
+            prime._arr[k] = i;
             k++;
         }
     }
-    return out;
+    return prime;
 }
