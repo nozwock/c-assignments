@@ -31,7 +31,6 @@ ArrWithSize get_prime_arr(int lower, int upper) {
     ArrWithSize prime;
     prime.arr_size = 0;
     prime._arr = calloc(prime.arr_size, sizeof(int));
-    int k = 0;
     for (int i = lower; i < upper; i++) {
         // not a great impl but whatever
         int j;
@@ -43,8 +42,7 @@ ArrWithSize get_prime_arr(int lower, int upper) {
         if (i % j != 0) {
             prime.arr_size++;
             prime._arr = realloc(prime._arr, prime.arr_size * sizeof(int));
-            prime._arr[k] = i;
-            k++;
+            prime._arr[prime.arr_size - 1] = i;
         }
     }
     return prime;
