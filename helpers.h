@@ -13,6 +13,8 @@ typedef struct ArrWithSize {
 bool is_armstrong(int);
 bool is_prime(int);
 
+unsigned long long get_factorial(int);
+
 ArrWithSize get_fibonacci_arr(int);
 ArrWithSize get_prime_arr(int, int);
 

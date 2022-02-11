@@ -31,6 +31,18 @@ bool is_armstrong(int n) {
     return false;
 }
 
+unsigned long long get_factorial(int n) {
+    // for +ve only
+    unsigned long long out = 1;
+    if (n < 0) {
+        return 0;
+    }
+    for (int i = 1; i <= n; i++) {
+        out *= i;
+    }
+    return out;
+}
+
 ArrWithSize get_fibonacci_arr(int n) {
     ArrWithSize fib;
     fib.arr_size = n;
