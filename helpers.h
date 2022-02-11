@@ -5,7 +5,7 @@
 #ifndef HELPERS_H
 #define HELPERS_H
 
-typedef struct ArrWithSize_ {
+typedef struct ArrWithSize {
     unsigned int *_arr;
     size_t arr_size;
 } ArrWithSize;

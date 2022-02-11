@@ -1,11 +1,7 @@
+#include "helpers.h"
 #include <math.h>
 #include <stdbool.h>
 #include <stdlib.h>
-
-typedef struct ArrWithSize_ {
-    unsigned int *_arr;
-    size_t arr_size;
-} ArrWithSize;
 
 bool is_prime(int n) {
     if (n < 1) {
