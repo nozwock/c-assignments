@@ -1,5 +1,5 @@
-#include "../helpers.h"
 #include <stdio.h>
+#include "../helpers.h"
 // compile via
 // gcc lab03_12_armstrong_num_bw_100_500.c ../helpers.c -lm
 

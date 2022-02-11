@@ -1,6 +1,6 @@
-#include "../helpers.h"
 #include <math.h>
 #include <stdio.h>
+#include "../helpers.h"
 // compile via:
 // gcc lab03_11-1_prime_nums_sq_root.c ../helpers.c -lm
 
