@@ -1,5 +1,11 @@
 #include <math.h>
 #include <stdbool.h>
+#include <stdlib.h>
+
+typedef struct ArrWithSize_ {
+    unsigned int *_arr;
+    size_t arr_size;
+} ArrWithSize;
 
 bool is_prime(int n) {
     if (n < 1) {
@@ -27,4 +33,19 @@ bool is_armstrong(int n) {
     }
 
     return false;
+}
+
+ArrWithSize get_fibonacci_arr(int n) {
+    ArrWithSize fib;
+    fib.arr_size = n;
+    fib._arr = calloc(fib.arr_size, sizeof(int));
+
+    fib._arr[0] = 0;
+    fib._arr[1] = 1;
+
+    for (int i = 2; i < fib.arr_size; i++) {
+        fib._arr[i] = fib._arr[i - 1] + fib._arr[i - 2];
+    }
+
+    return fib;
 }
