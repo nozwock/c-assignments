@@ -43,6 +43,17 @@ unsigned long long get_factorial(int n) {
     return out;
 }
 
+unsigned long long get_factorial_recurv(int n) {
+    // for +ve only
+    if (n < 0) {
+        return 0; // err
+    }
+    if (n == 0) {
+        return 1;
+    }
+    return n * get_factorial_recurv(n - 1);
+}
+
 ArrWithSize get_fibonacci_arr(int n) {
     ArrWithSize fib;
     fib.arr_size = n;
