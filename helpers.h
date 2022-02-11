@@ -14,5 +14,6 @@ bool is_armstrong(int);
 bool is_prime(int);
 
 ArrWithSize get_fibonacci_arr(int);
+ArrWithSize get_prime_arr(int, int);
 
 #endif

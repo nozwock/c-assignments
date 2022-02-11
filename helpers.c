@@ -45,3 +45,24 @@ ArrWithSize get_fibonacci_arr(int n) {
 
     return fib;
 }
+
+ArrWithSize get_prime_arr(int lower, int upper) {
+    ArrWithSize prime;
+    prime.arr_size = 0;
+    prime._arr = calloc(prime.arr_size, sizeof(int));
+    for (int i = lower; i < upper; i++) {
+        // not a great impl but whatever
+        int j;
+        for (j = 2; j <= sqrt(i); j++) {
+            if (i % j == 0) {
+                break;
+            }
+        }
+        if (i % j != 0) {
+            prime.arr_size++;
+            prime._arr = realloc(prime._arr, prime.arr_size * sizeof(int));
+            prime._arr[prime.arr_size - 1] = i;
+        }
+    }
+    return prime;
+}
