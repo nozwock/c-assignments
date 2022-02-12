@@ -12,10 +12,8 @@ int main(void) {
 }
 
 int get_digits_sum_recurv(int n) {
-    int i = n;
     if (n == 0) {
         return 0;
     }
-    n /= 10;
-    return (i % 10) + get_digits_sum_recurv(n);
+    return (n % 10) + get_digits_sum_recurv(n / 10);
 }
