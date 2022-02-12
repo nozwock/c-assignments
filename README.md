@@ -10,12 +10,12 @@ College C assignments; nothing special :shrug:
 |       | 2 | Basic salary of an employee is input through the keyboard. The DA is 25% of the basic salary while the HRA is 15% of the basic salary. Provident Fund is deducted at the rate of 10% of the gross salary (BS+DA+HRA). Program to calculate the Net Salary. |
 |       | 3 | Write a program to determine the roots of quadratic equation.  
 |       | 4 | Write a program to find the largest of three numbers using nested if else. |
-|       | 5 | Write a program to receive marks of physics, chemistry & maths from user & check its eligibility for course if</br>a) Marks of physics > 40</br>b) Marks of chemistry > 50</br>c) Marks of math’s > 60</br>d) Total of physics & math’s marks > 150</br>or</br>e) Total of three subjects marks > 200 |
-| LAB 2 | 6 | Write a program to find the value of y for a particular value of n. The a, x, b, n is input by user</br>if n=1 y=ax%b</br>if n=2 y=ax2+b2</br>if n=3 y=a-bx</br>if n=4 y=a+x/b |
+|       | 5 | Write a program to receive marks of physics, chemistry & maths from user & check its eligibility for course if</br>`a) Marks of physics > 40`</br>`b) Marks of chemistry > 50`</br>`c) Marks of math’s > 60`</br>`d) Total of physics & math’s marks > 150`</br>or</br>`e) Total of three subjects marks > 200`|
+| LAB 2 | 6 | Write a program to find the value of y for a particular value of n. The `a, x, b, n is input by user`</br>`if n=1 y=ax%b`</br>`if n=2 y=ax2+b2`</br>`if n=3 y=a-bx`</br>`if n=4 y=a+x/b` |
 |       | 7 | Write a program to construct a Fibonacci series upto n terms.
 |       | 8 | Write a program to find whether the number is Armstrong number. |
 |       | 9 | Write a program to generate sum of series 1!+2!+3!+--------------n! |
-|       | 10 | Write a program to find the sum of following series (1)-(x^1/1!)+(x^2/2!)-............(x^n/n)! |
+|       | 10 | Write a program to find the sum of following series ```(1)-(x^1/1!)+(x^2/2!)-....(x^n/n)! ```|
 | LAB 3 | 11 | Write a program to print the entire prime no between 1 and 300. |
 |       | 12 | Write a program to print out all the Armstrong number between 100 and 500. |
 |       | 13 | Write a program to draw the following figure:</br><pre>3 2 1<br>2 1<br>1<br>  \*<br> \* \*<br>\* \* \*<br></pre> |
