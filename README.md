@@ -11,7 +11,7 @@ College C assignments; nothing special :shrug:
 |       | 3 | Write a program to determine the roots of quadratic equation.  
 |       | 4 | Write a program to find the largest of three numbers using nested if else. |
 |       | 5 | Write a program to receive marks of physics, chemistry & maths from user & check its eligibility for course if</br>`a) Marks of physics > 40`</br>`b) Marks of chemistry > 50`</br>`c) Marks of math’s > 60`</br>`d) Total of physics & math’s marks > 150`</br>or</br>`e) Total of three subjects marks > 200`|
-| LAB 2 | 6 | Write a program to find the value of y for a particular value of n. The a, x, b, n is input by user</br>if n=1 y=ax%b</br>if n=2 y=ax2+b2</br>if n=3 y=a-bx</br>if n=4 y=a+x/b |
+| LAB 2 | 6 | Write a program to find the value of y for a particular value of n. The `a, x, b, n is input by user`</br>`if n=1 y=ax%b`</br>`if n=2 y=ax2+b2`</br>`if n=3 y=a-bx`</br>`if n=4 y=a+x/b` |
 |       | 7 | Write a program to construct a Fibonacci series upto n terms.
 |       | 8 | Write a program to find whether the number is Armstrong number. |
 |       | 9 | Write a program to generate sum of series 1!+2!+3!+--------------n! |
