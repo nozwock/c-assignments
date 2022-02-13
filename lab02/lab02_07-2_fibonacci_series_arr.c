@@ -6,7 +6,7 @@ typedef struct ArrWithSize {
     size_t arr_size;
 } ArrWithSize;
 
-ArrWithSize get_fibonacci_arr(int n);
+ArrWithSize get_fibonacci_arr(int);
 
 int main(void) {
     int n;

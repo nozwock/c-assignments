@@ -1,3 +1,3 @@
-// already done in lab01_1
+// already done in lab01_01
 
 int main(void) {}

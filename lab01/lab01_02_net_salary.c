@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-double get_net_salary(double bs, double da, double hra, double pf);
+double get_net_salary(double, double, double, double);
 
 int main(void) {
     double base_salary;

@@ -8,8 +8,8 @@ typedef struct ArrWithSize {
     size_t arr_size;
 } ArrWithSize;
 
-int get_approx_num_of_primes(int n);
-ArrWithSize get_prime_arr(int lower, int upper);
+int get_approx_num_of_primes(int);
+ArrWithSize get_prime_arr(int, int);
 
 int main(void) {
     ArrWithSize prime = get_prime_arr(1, 300);

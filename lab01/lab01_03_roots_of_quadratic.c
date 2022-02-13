@@ -3,7 +3,7 @@
 // use -lm flag for linking math.h
 
 int main(void) {
-    double a, b, c, discriminant, root1, root2, real_part, imag_part;
+    double a, b, c, discriminant, root1, root2, real_part, img_part;
     printf("Enter coefficients a, b and c: ");
     scanf("%lf %lf %lf", &a, &b, &c);
 
@@ -25,8 +25,8 @@ int main(void) {
     // imaginary roots
     else {
         real_part = -b / (2 * a);
-        imag_part = sqrt(-discriminant) / (2 * a);
+        img_part = sqrt(-discriminant) / (2 * a);
         printf("root1 = %.4lf+%.4lfi\nroot2 = %.4lf-%.4lfi\n", real_part,
-               imag_part, real_part, imag_part);
+               img_part, real_part, img_part);
     }
 }

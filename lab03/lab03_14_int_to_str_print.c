@@ -13,10 +13,10 @@ int main(void) {
     // to get length of string required using NULL buffer
     // we could also find length using log10 but whatever
     // it won't take account for -ve
-    char n_str[length + 1];
-    sprintf(n_str, "%d", num);
+    char num_str[length + 1];
+    sprintf(num_str, "%d", num);
     for (int i = 0; i < length; i++) {
-        printf("%c\n", n_str[i]);
+        printf("%c\n", num_str[i]);
     }
     printf("\b");
 }

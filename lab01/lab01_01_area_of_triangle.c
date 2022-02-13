@@ -2,7 +2,7 @@
 #include <stdio.h>
 // use -lm flag for linking math.h
 
-double get_triangle_area(double a, double b, double c);
+double get_triangle_area(double, double, double);
 
 int main(void) {
     double a, b, c;

@@ -3,55 +3,55 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-bool is_prime(int n) {
-    if (n < 1) {
+bool is_prime(int num) {
+    if (num < 1) {
         return false;
     }
-    for (int i = 2; i <= sqrt(n); i++) {
-        if (n % i == 0) {
+    for (int i = 2; i <= sqrt(num); i++) {
+        if (num % i == 0) {
             return false;
         }
     }
     return true;
 }
 
-bool is_armstrong(int n) {
-    int i = n, r, sum = 0;
+bool is_armstrong(int num) {
+    int tmp = num, rem, sum = 0;
 
-    while (i > 0) {
-        r = i % 10;
-        sum += (r * r * r);
-        i /= 10;
+    while (tmp > 0) {
+        rem = tmp % 10;
+        sum += (rem * rem * rem);
+        tmp /= 10;
     }
 
-    if (n == sum) {
+    if (num == sum) {
         return true;
     }
 
     return false;
 }
 
-unsigned long long get_factorial(int n) {
+unsigned long long get_factorial(int num) {
     // for +ve only
     unsigned long long out = 1;
-    if (n < 0) {
+    if (num < 0) {
         return 0;
     }
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= num; i++) {
         out *= i;
     }
     return out;
 }
 
-unsigned long long get_factorial_recurv(int n) {
+unsigned long long get_factorial_recurv(int num) {
     // for +ve only
-    if (n < 0) {
+    if (num < 0) {
         return 0; // err
     }
-    if (n == 0) {
+    if (num == 0) {
         return 1;
     }
-    return n * get_factorial_recurv(n - 1);
+    return num * get_factorial_recurv(num - 1);
 }
 
 ArrWithSize get_fibonacci_arr(int n) {

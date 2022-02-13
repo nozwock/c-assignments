@@ -8,21 +8,21 @@ int main(void) {
     printf("Enter array length: ");
     scanf("%d", &size);
 
-    int n_arr[size];
+    int num_arr[size];
     printf("Enter number: ");
     for (int i = 0; i < size; i++) {
-        scanf("%d", &n_arr[i]);
+        scanf("%d", &num_arr[i]);
     }
-    printf("GCD = %d\n", get_gcd(n_arr, size));
+    printf("GCD = %d\n", get_gcd(num_arr, size));
 }
 
-int gcd_euclidean(int a, int b) {
-    if (b == 0) {
-        return a;
-    } else if (a == 0) {
-        return b;
+int gcd_euclidean(int num1, int num2) {
+    if (num2 == 0) {
+        return num1;
+    } else if (num1 == 0) {
+        return num2;
     }
-    return gcd_euclidean(b, a % b);
+    return gcd_euclidean(num2, num1 % num2);
 }
 
 int get_gcd(int arr[], size_t size) {

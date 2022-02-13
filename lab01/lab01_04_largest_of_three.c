@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
+    // with nested if else
     double a, b, c;
     printf("Enter 3 numbers: ");
     scanf("%lf %lf %lf", &a, &b, &c);
