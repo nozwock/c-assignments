@@ -2,8 +2,10 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-#ifndef HELPERS_H
-#define HELPERS_H
+#pragma ONCE
+
+// #ifndef HELPERS_H
+// #define HELPERS_H
 
 typedef struct ArrWithSize {
     unsigned int *_arr;
@@ -19,4 +21,4 @@ unsigned long long get_factorial_recurv(int);
 ArrWithSize get_fibonacci_arr(int);
 ArrWithSize get_prime_arr(int, int);
 
-#endif
+// #endif
