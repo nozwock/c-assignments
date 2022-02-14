@@ -11,14 +11,14 @@ int main(void) {
     StrWithSize bin;
     bin._str = "11110111";
     bin.size = 8;
-    int dec = binary_to_decimal(bin);
-    printf("decimal value of %s is %d\n", bin._str, dec);
+    int num = binary_to_decimal(bin);
+    printf("decimal value of %s is %d\n", bin._str, num);
 }
 
 int binary_to_decimal(StrWithSize bin) {
-    int dec = 0;
+    int num = 0;
     for (int i = bin.size - 1; i >= 0; i--) {
-        dec += (bin._str[i] - '0') * pow(2, bin.size - 1 - i);
+        num += (bin._str[i] - '0') * pow(2, bin.size - 1 - i);
     }
-    return dec;
+    return num;
 }
