@@ -3,6 +3,16 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+int get_str_len(char str[]) {
+    int i = 0;
+    while (true) {
+        if (str[i] == '\0') {
+            return i;
+        }
+        i++;
+    }
+}
+
 bool is_prime(int num) {
     if (num < 1) {
         return false;
