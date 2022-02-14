@@ -12,6 +12,11 @@ typedef struct ArrWithSize {
     size_t arr_size;
 } ArrWithSize;
 
+typedef struct StrWithSize_ {
+    char *_str;
+    size_t size;
+} StrWithSize;
+
 bool is_armstrong(int);
 bool is_prime(int);
 
