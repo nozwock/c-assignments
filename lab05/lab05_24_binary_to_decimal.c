@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "../helpers.h"
+#include <string.h>
 
 int binary_to_decimal(char[]);
 
@@ -12,7 +12,7 @@ int main(void) {
 
 int binary_to_decimal(char bin[]) {
     int num = 0;
-    int length = get_str_len(bin);
+    int length = strlen(bin);
     for (int i = length - 1; i >= 0; i--) {
         // do a bound check i.e. char should be only 0 or 1
         if (bin[i] - '0' != 0 && bin[i] - '0' != 1) {
