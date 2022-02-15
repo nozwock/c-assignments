@@ -12,11 +12,6 @@ typedef struct ArrWithSize {
     size_t arr_size;
 } ArrWithSize;
 
-typedef struct StrWithSize_ {
-    char *_str;
-    size_t size;
-} StrWithSize;
-
 int get_string_length(char[]);
 void reverse_string(char[]);
 void get_reversed_string(char[], char[]);
