@@ -3,14 +3,12 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-int get_str_len(char str[]) {
-    int i = 0;
-    while (true) {
-        if (str[i] == '\0') {
-            return i;
-        }
-        i++;
+int get_string_length(char str[]) {
+    int offset = 0;
+    while (str[offset] != '\0') {
+        offset++;
     }
+    return offset;
 }
 
 bool is_prime(int num) {

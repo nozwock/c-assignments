@@ -17,7 +17,7 @@ typedef struct StrWithSize_ {
     size_t size;
 } StrWithSize;
 
-int get_str_len(char[]);
+int get_string_length(char[]);
 
 bool is_armstrong(int);
 bool is_prime(int);
