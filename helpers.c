@@ -11,6 +11,25 @@ int get_string_length(char str[]) {
     return offset;
 }
 
+void reverse_string(char str[]) {
+    char tmp;
+    int len = get_string_length(str);
+    for (int i = 0; i < len / 2; i++) {
+        tmp = str[i];
+        str[i] = str[len - i - 1];
+        str[len - i - 1] = tmp;
+    }
+}
+
+void get_reversed_string(char str_from[], char str_to[]) {
+    size_t len = get_string_length(str_from);
+    int i, j;
+    for (i = len - 1, j = 0; i >= 0; i--, j++) {
+        str_to[j] = str_from[i];
+    }
+    str_to[j] = '\0';
+}
+
 bool is_prime(int num) {
     if (num < 1) {
         return false;

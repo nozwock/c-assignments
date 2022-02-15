@@ -18,6 +18,8 @@ typedef struct StrWithSize_ {
 } StrWithSize;
 
 int get_string_length(char[]);
+void reverse_string(char[]);
+void get_reversed_string(char[], char[]);
 
 bool is_armstrong(int);
 bool is_prime(int);
