@@ -27,7 +27,7 @@ StrWithSize decimal_to_binary(int num) {
 
     for (int i = num; i != 0; i /= 2) {
         bin.size++;
-        bin._str = realloc(bin._str, bin.size + 1 * sizeof(char));
+        bin._str = realloc(bin._str, (bin.size + 1) * sizeof(char));
         bin._str[bin.size - 1] = i % 2 + '0';
     }
 
