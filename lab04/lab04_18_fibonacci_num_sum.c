@@ -1,22 +1,23 @@
+#include <stdint.h>
 #include <stdio.h>
 #include "../helpers.h"
 
-unsigned int get_fibonacci_sum(int);
+int64_t get_fibonacci_sum(int);
 
 int main(void) {
     int n;
     printf("Enter upper limit(nth element): ");
     scanf("%d", &n);
 
-    printf("Sum of fibonacci series until %dth element = %d\n", n,
+    printf("Sum of fibonacci series until %dth element = %ld\n", n,
            get_fibonacci_sum(n));
 }
 
-unsigned int get_fibonacci_sum(int n) {
-    unsigned int sum = 0;
-    ArrWithSize fib = get_fibonacci_arr(n);
+int64_t get_fibonacci_sum(int n) {
+    int64_t sum = 0;
+    ArrWithSize_int64_t fib = get_fibonacci_arr(n);
 
-    for (int i = 0; i < fib.arr_size; i++) {
+    for (int i = 0; i < fib.size; i++) {
         sum += fib._arr[i];
     }
     free(fib._arr);
