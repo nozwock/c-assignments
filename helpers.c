@@ -81,25 +81,25 @@ unsigned long long get_factorial_recurv(int num) {
     return num * get_factorial_recurv(num - 1);
 }
 
-ArrWithSize get_fibonacci_arr(int n) {
-    ArrWithSize fib;
-    fib.arr_size = n;
-    fib._arr = calloc(fib.arr_size, sizeof(int));
+ArrWithSize_int64_t get_fibonacci_arr(int n) {
+    ArrWithSize_int64_t fib;
+    fib.size = n;
+    fib._arr = calloc(fib.size, sizeof(int));
 
     fib._arr[0] = 0;
     fib._arr[1] = 1;
 
-    for (int i = 2; i < fib.arr_size; i++) {
+    for (int i = 2; i < fib.size; i++) {
         fib._arr[i] = fib._arr[i - 1] + fib._arr[i - 2];
     }
 
     return fib;
 }
 
-ArrWithSize get_prime_arr(int lower, int upper) {
-    ArrWithSize prime;
-    prime.arr_size = 0;
-    prime._arr = calloc(prime.arr_size, sizeof(int));
+ArrWithSize_int64_t get_prime_arr(int lower, int upper) {
+    ArrWithSize_int64_t prime;
+    prime.size = 0;
+    prime._arr = calloc(prime.size, sizeof(int));
     for (int i = lower; i < upper; i++) {
         // not a great impl but whatever
         int j;
@@ -109,9 +109,9 @@ ArrWithSize get_prime_arr(int lower, int upper) {
             }
         }
         if (i % j != 0) {
-            prime.arr_size++;
-            prime._arr = realloc(prime._arr, prime.arr_size * sizeof(int));
-            prime._arr[prime.arr_size - 1] = i;
+            prime.size++;
+            prime._arr = realloc(prime._arr, prime.size * sizeof(int));
+            prime._arr[prime.size - 1] = i;
         }
     }
     return prime;
