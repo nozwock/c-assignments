@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../helpers.h"
+#include "../lib/helpers.h"
 
 // for series
 // 1!+2!+-----n!

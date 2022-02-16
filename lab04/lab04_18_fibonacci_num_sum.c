@@ -1,6 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
-#include "../helpers.h"
+#include "../lib/helpers.h"
 
 int64_t get_fibonacci_sum(int);
 

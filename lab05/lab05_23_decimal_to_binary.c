@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../helpers.h"
+#include "../lib/helpers.h"
 
 char *_decimal_to_binary(int);
 
