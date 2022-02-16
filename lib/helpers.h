@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#pragma ONCE
+#pragma once
 
 // #ifndef HELPERS_H
 // #define HELPERS_H

@@ -1,4 +1,4 @@
-# pragma ONCE
+# pragma once
 
 void swap(int *first, int *second);
 
