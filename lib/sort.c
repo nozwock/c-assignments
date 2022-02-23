@@ -1,6 +1,8 @@
 #include "sort.h"
+#include <stdbool.h>
+#include <stdio.h>
 
-void swap(int *first, int *second) {
+void swap_int(int *first, int *second) {
     int tmp = *first;
     *first = *second;
     *second = tmp;
@@ -17,7 +19,24 @@ void selection_sort(int *arr, int size) {
         }
 
         if (min_index != i) {
-            swap(arr + i, arr + min_index);
+            swap_int(arr + i, arr + min_index);
+        }
+    }
+}
+
+void bubble_sort(int *arr, int size) {
+    for (int i = 0; i < size - 1; i++) {
+        bool swapped = false;
+
+        for (int j = 0; j < size - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap_int(arr + j, arr + j + 1);
+                swapped = true;
+            }
+        }
+
+        if (!swapped) {
+            return;
         }
     }
 }
