@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     float phy_marks, che_marks, math_marks;
     printf("Enter marks for physics, chemistry, maths: ");
     scanf("%f %f %f", &phy_marks, &che_marks, &math_marks);

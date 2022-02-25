@@ -8,7 +8,8 @@ typedef struct ArrWithSize {
 
 ArrWithSize get_fibonacci_arr(int);
 
-int main(void) {
+int main(void)
+{
     int n;
     printf("Enter upper limit(nth element): ");
     scanf("%d", &n);
@@ -21,7 +22,8 @@ int main(void) {
     free(fib._arr);
 }
 
-ArrWithSize get_fibonacci_arr(int n) {
+ArrWithSize get_fibonacci_arr(int n)
+{
     ArrWithSize fib;
     fib.arr_size = n;
     fib._arr = calloc(fib.arr_size, sizeof(int));

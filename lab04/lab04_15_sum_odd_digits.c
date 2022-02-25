@@ -3,7 +3,8 @@
 
 int get_sum_odd_digits(int);
 
-int main(void) {
+int main(void)
+{
     int sum_odd_digits, num;
     printf("Enter a number: ");
     scanf("%d", &num);
@@ -11,7 +12,8 @@ int main(void) {
     printf("Sum of odd digits of %d = %d\n", num, sum_odd_digits);
 }
 
-int get_sum_odd_digits(int num) {
+int get_sum_odd_digits(int num)
+{
     int sum = 0;
     num = abs(num); // for -ve arg
     while (num > 0) {

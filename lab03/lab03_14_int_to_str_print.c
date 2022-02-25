@@ -5,7 +5,8 @@
 // https://en.cppreference.com/w/c/io/fprintf
 // http://www.cplusplus.com/reference/cstdio/snprintf/
 
-int main(void) {
+int main(void)
+{
     int num;
     printf("Enter a number: ");
     scanf("%d", &num);

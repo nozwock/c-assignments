@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "../lib/helpers.h"
 
-int main(void) {
+int main(void)
+{
     int num;
     printf("Enter value of n: ");
     scanf("%d", &num);

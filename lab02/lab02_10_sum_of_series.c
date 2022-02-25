@@ -5,7 +5,8 @@
 // for series
 // (1)-(x^1/1!)+(x^2/2!)-............(x^n/n)!
 
-int main(void) {
+int main(void)
+{
     int x, n;
     unsigned long long sum = 1, factorial = 1;
     // note: initialized sum with 1 here

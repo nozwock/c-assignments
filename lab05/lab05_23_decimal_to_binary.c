@@ -4,7 +4,8 @@
 
 char *_decimal_to_binary(int);
 
-int main(void) {
+int main(void)
+{
     int num;
     printf("Enter a number: ");
     scanf("%d", &num);
@@ -12,7 +13,8 @@ int main(void) {
     printf("binary of %d is %s\n", num, _str);
 }
 
-char *_decimal_to_binary(int num) {
+char *_decimal_to_binary(int num)
+{
     int len = 0;
     char *bin = calloc(len + 1, sizeof(char));
     bin[len] = '\0';

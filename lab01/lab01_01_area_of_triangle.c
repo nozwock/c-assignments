@@ -4,7 +4,8 @@
 
 double get_triangle_area(double, double, double);
 
-int main(void) {
+int main(void)
+{
     double a, b, c;
     printf("Enter values for sides of triangle: ");
     scanf("%lf %lf %lf", &a, &b, &c);
@@ -12,7 +13,8 @@ int main(void) {
     printf("area of triangle = %.3lf\n", get_triangle_area(a, b, c));
 }
 
-double get_triangle_area(double a, double b, double c) {
+double get_triangle_area(double a, double b, double c)
+{
     double s = (a + b + c) / 2;
     return sqrtf(s * (s - a) * (s - b) * (s - c));
 }

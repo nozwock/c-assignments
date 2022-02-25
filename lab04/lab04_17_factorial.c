@@ -2,7 +2,8 @@
 
 long long get_factorial(int);
 
-int main(void) {
+int main(void)
+{
     int num;
     printf("Enter a number: ");
     scanf("%d", &num);
@@ -10,7 +11,8 @@ int main(void) {
     printf("Factorial of %d = %lld\n", num, factorial);
 }
 
-long long get_factorial(int num) {
+long long get_factorial(int num)
+{
     // for +ve only
     long long out = 1;
     if (num < 0) {

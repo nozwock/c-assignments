@@ -2,7 +2,8 @@
 #include <stdio.h>
 // use -lm flag for linking math.h
 
-int main(void) {
+int main(void)
+{
     double a, x, b, y;
     int n;
     printf("Enter value of a, x, b, n respectively: ");

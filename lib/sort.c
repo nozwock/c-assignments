@@ -2,13 +2,15 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-void swap_int(int *first, int *second) {
+void swap_int(int *first, int *second)
+{
     int tmp = *first;
     *first = *second;
     *second = tmp;
 }
 
-void selection_sort(int *arr, int size) {
+void selection_sort(int *arr, int size)
+{
     for (int i = 0; i < size - 1; i++) {
         int min_index = i;
 
@@ -24,7 +26,8 @@ void selection_sort(int *arr, int size) {
     }
 }
 
-void bubble_sort(int *arr, int size) {
+void bubble_sort(int *arr, int size)
+{
     for (int i = 0; i < size - 1; i++) {
         bool swapped = false;
 

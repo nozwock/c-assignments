@@ -4,7 +4,8 @@
 
 int64_t get_fibonacci_sum(int);
 
-int main(void) {
+int main(void)
+{
     int n;
     printf("Enter upper limit(nth element): ");
     scanf("%d", &n);
@@ -13,7 +14,8 @@ int main(void) {
            get_fibonacci_sum(n));
 }
 
-int64_t get_fibonacci_sum(int n) {
+int64_t get_fibonacci_sum(int n)
+{
     int64_t sum = 0;
     ArrWithSize_int64_t fib = get_fibonacci_arr(n);
 

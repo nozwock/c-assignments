@@ -3,7 +3,8 @@
 
 bool is_armstrong(int);
 
-int main(void) {
+int main(void)
+{
     int num;
     printf("Enter a number to check if it's armstrong: ");
     scanf("%d", &num);
@@ -11,7 +12,8 @@ int main(void) {
     printf("%d\n", is_armstrong(num));
 }
 
-bool is_armstrong(int num) {
+bool is_armstrong(int num)
+{
     int tmp = num, rem, sum = 0;
 
     while (tmp > 0) {

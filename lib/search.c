@@ -1,6 +1,7 @@
 #include "search.h"
 
-int linear_search(int *arr, int size, int val) {
+int linear_search(int *arr, int size, int val)
+{
     for (int i = 0; i < size; i++) {
         if (arr[i] == val) {
             return i;
@@ -9,7 +10,8 @@ int linear_search(int *arr, int size, int val) {
     return -1;
 }
 
-int binary_search(int *arr, int size, int val) {
+int binary_search(int *arr, int size, int val)
+{
     int lower = 0, upper = size - 1;
     int mid;
     while (lower <= upper) {

@@ -3,7 +3,8 @@
 int gcd_euclidean(int, int);
 int get_gcd(int[], size_t);
 
-int main(void) {
+int main(void)
+{
     int size;
     printf("Enter array length: ");
     scanf("%d", &size);
@@ -16,7 +17,8 @@ int main(void) {
     printf("GCD = %d\n", get_gcd(num_arr, size));
 }
 
-int gcd_euclidean(int num1, int num2) {
+int gcd_euclidean(int num1, int num2)
+{
     if (num2 == 0) {
         return num1;
     } else if (num1 == 0) {
@@ -25,7 +27,8 @@ int gcd_euclidean(int num1, int num2) {
     return gcd_euclidean(num2, num1 % num2);
 }
 
-int get_gcd(int arr[], size_t size) {
+int get_gcd(int arr[], size_t size)
+{
     if (size == 0) {
         return 0;
     } else if (size == 1) {

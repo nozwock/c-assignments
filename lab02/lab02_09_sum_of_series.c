@@ -3,7 +3,8 @@
 // for series
 // 1!+2!+3!+--------------n!
 
-int main(void) {
+int main(void)
+{
     int n;
     unsigned long long sum = 1, factorial = 1;
     printf("1!+2!+3!+--------------n!\n");

@@ -3,7 +3,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-int get_string_length(char str[]) {
+int get_string_length(char str[])
+{
     int offset = 0;
     while (str[offset] != '\0') {
         offset++;
@@ -11,7 +12,8 @@ int get_string_length(char str[]) {
     return offset;
 }
 
-void reverse_string(char str[]) {
+void reverse_string(char str[])
+{
     char tmp;
     int len = get_string_length(str);
     for (int i = 0; i < len / 2; i++) {
@@ -21,7 +23,8 @@ void reverse_string(char str[]) {
     }
 }
 
-void get_reversed_string(char str_from[], char str_to[]) {
+void get_reversed_string(char str_from[], char str_to[])
+{
     size_t len = get_string_length(str_from);
     int i, j;
     for (i = len - 1, j = 0; i >= 0; i--, j++) {
@@ -30,7 +33,8 @@ void get_reversed_string(char str_from[], char str_to[]) {
     str_to[j] = '\0';
 }
 
-bool is_prime(int num) {
+bool is_prime(int num)
+{
     if (num < 1) {
         return false;
     }
@@ -42,7 +46,8 @@ bool is_prime(int num) {
     return true;
 }
 
-bool is_armstrong(int num) {
+bool is_armstrong(int num)
+{
     int tmp = num, rem, sum = 0;
 
     while (tmp > 0) {
@@ -58,7 +63,8 @@ bool is_armstrong(int num) {
     return false;
 }
 
-unsigned long long get_factorial(int num) {
+unsigned long long get_factorial(int num)
+{
     // for +ve only
     unsigned long long out = 1;
     if (num < 0) {
@@ -70,7 +76,8 @@ unsigned long long get_factorial(int num) {
     return out;
 }
 
-unsigned long long get_factorial_recurv(int num) {
+unsigned long long get_factorial_recurv(int num)
+{
     // for +ve only
     if (num < 0) {
         return 0; // err
@@ -81,7 +88,8 @@ unsigned long long get_factorial_recurv(int num) {
     return num * get_factorial_recurv(num - 1);
 }
 
-ArrWithSize_int64_t get_fibonacci_arr(int n) {
+ArrWithSize_int64_t get_fibonacci_arr(int n)
+{
     ArrWithSize_int64_t fib;
     fib.size = n;
     fib._arr = calloc(fib.size, sizeof(int));
@@ -96,7 +104,8 @@ ArrWithSize_int64_t get_fibonacci_arr(int n) {
     return fib;
 }
 
-ArrWithSize_int64_t get_prime_arr(int lower, int upper) {
+ArrWithSize_int64_t get_prime_arr(int lower, int upper)
+{
     ArrWithSize_int64_t prime;
     prime.size = 0;
     prime._arr = calloc(prime.size, sizeof(int));

@@ -2,7 +2,8 @@
 #include <stdio.h>
 // use -lm flag for linking math.h
 
-int main(void) {
+int main(void)
+{
     double a, b, c, discriminant, root1, root2, real_part, img_part;
     printf("Enter coefficients a, b and c: ");
     scanf("%lf %lf %lf", &a, &b, &c);

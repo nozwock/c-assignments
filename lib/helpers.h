@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdbool.h>
-#include <stdlib.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 #pragma once
 

@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     int n;
     printf("Enter upper limit(nth element): ");
     scanf("%d", &n);

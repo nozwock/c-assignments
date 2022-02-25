@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-# pragma once
+#pragma once
 
 void swap(int *first, int *second);
 

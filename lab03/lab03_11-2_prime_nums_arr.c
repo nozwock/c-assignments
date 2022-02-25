@@ -11,7 +11,8 @@ typedef struct ArrWithSize {
 int get_approx_num_of_primes(int);
 ArrWithSize get_prime_arr(int, int);
 
-int main(void) {
+int main(void)
+{
     ArrWithSize prime = get_prime_arr(1, 300);
     for (int i = 0; i < prime.arr_size; i++) {
         printf("%d, ", prime._arr[i]);
@@ -20,14 +21,16 @@ int main(void) {
     free(prime._arr);
 }
 
-int get_approx_num_of_primes(int n) {
+int get_approx_num_of_primes(int n)
+{
     // π(x) i.e. number of primes under x = (x/(ln(x)-1))*1.01
     // 1.01 is offset here
     // https://primes.utm.edu/howmany.html
     return (n / (log(n) - 1)) * 1.01;
 }
 
-ArrWithSize get_prime_arr(int lower, int upper) {
+ArrWithSize get_prime_arr(int lower, int upper)
+{
     ArrWithSize prime;
     prime.arr_size = 0;
     prime._arr = calloc(prime.arr_size, sizeof(int));
