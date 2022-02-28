@@ -67,7 +67,7 @@ void __merge(int *arr, int size, int start, int end)
 {
     // stupid C doesn't have convinient array slices so we have to keep track
     // via indices
-    int *buf = (int *)malloc(size * sizeof(int));
+    int *buf = malloc(size * sizeof(*buf));
     int buf_index = start;
     int i, j;
     i = start;                 // starting index of left half subarray
