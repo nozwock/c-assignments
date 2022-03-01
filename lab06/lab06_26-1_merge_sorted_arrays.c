@@ -52,7 +52,7 @@ int main(void)
             if (merged_arr[i] == merged_arr[j]) {
 
                 // shifting the elements
-                for (int k = j; k < merged_sz; k++) {
+                for (int k = j; k < merged_sz - 1; k++) {
                     merged_arr[k] = merged_arr[k + 1];
                 }
 

@@ -18,7 +18,7 @@ int main(void)
                 dup_count++;
 
                 // shifting the elements
-                for (int k = j; k < size; k++) {
+                for (int k = j; k < size - 1; k++) {
                     arr[k] = arr[k + 1];
                 }
 
