@@ -19,5 +19,5 @@ int main(void)
         sum += factorial;
     }
 
-    printf("sum of series is: %ld\n", sum);
+    printf("sum of series is: %lu\n", sum);
 }
