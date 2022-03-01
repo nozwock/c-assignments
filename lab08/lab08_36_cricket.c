@@ -42,8 +42,8 @@ int main(void)
     for (int i = 0; i < teams_sz; i++) {
         for (int j = 0; j < MAX_PLAYERS; j++) {
             if (teams[i] == cricket[j].team_name) {
-                printf("%s with batting average of %d\n", cricket[i].name,
-                       cricket[i].batting_avg);
+                printf("%s with batting average of %d\n", cricket[j].name,
+                       cricket[j].batting_avg);
             }
         }
     }
