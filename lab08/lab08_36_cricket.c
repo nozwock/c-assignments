@@ -40,6 +40,7 @@ int main(void)
 
     // printing details team wise
     for (int i = 0; i < teams_sz; i++) {
+        printf("for team '%s'\n", teams[i]);
         for (int j = 0; j < MAX_PLAYERS; j++) {
             if (teams[i] == cricket[j].team_name) {
                 printf("%s with batting average of %d\n", cricket[j].name,
