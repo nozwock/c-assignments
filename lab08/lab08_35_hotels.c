@@ -2,7 +2,7 @@
 
 // not impl-ing any further due to lack of info
 
-#define NUM_OF_HOTELS 10
+#define MAX_HOTELS 10
 
 struct Hotel {
     char *name;
@@ -12,7 +12,7 @@ struct Hotel {
     int num_rooms;
 };
 
-struct Hotel hotels[NUM_OF_HOTELS];
+struct Hotel hotels[MAX_HOTELS];
 
 void print_hotel(int grade);
 
@@ -20,7 +20,7 @@ int main(void) {}
 
 void print_hotel(int grade)
 {
-    for (int i = 0; i < NUM_OF_HOTELS; i++) {
+    for (int i = 0; i < MAX_HOTELS; i++) {
         if (hotels[i].grade == grade) {
             printf("%s\n", hotels[i].name);
             return;
