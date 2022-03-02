@@ -22,7 +22,7 @@ int main(int argc, char **argv)
         return 2;
     }
 
-    FILE *to_file = fopen(argv[1], "w"); // read from
+    FILE *to_file = fopen(argv[1], "w"); // write to
     if (to_file == NULL) {
         printf("Error: Could not open file\n");
         return 3;
