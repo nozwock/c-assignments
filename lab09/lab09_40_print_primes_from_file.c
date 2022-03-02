@@ -28,9 +28,9 @@ int main(int argc, char **argv)
         return 3;
     }
 
-    for (long i = 0; i < 100 + 1; i++) {
+    for (int i = 0; i < 100 + 1; i++) {
         if (is_prime(i)) {
-            fprintf(to_file, "%ld\n", i);
+            fprintf(to_file, "%d\n", i);
         }
     }
 
