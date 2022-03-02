@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../lib/helpers.h"
 // compile via
-// gcc lab09_40_print_primes_from_file.c ../lib/helpers.c -lm
+// gcc lab09_40_write_primes_to_file.c ../lib/helpers.c -lm
 
 int main(int argc, char **argv)
 {
