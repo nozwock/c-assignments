@@ -14,20 +14,21 @@ int main(int argc, char **argv)
         return 2;
     }
 
-    FILE *to_file = fopen(argv[2], "r+"); // write to
-    if (to_file == NULL) {
-        printf("Error: Could not open file");
-        return 2;
-    }
-
     // confirmation prompt
     char prompt;
-    printf("Are you sure? \033[0;1;91m%s will be overwritten!\033[0m [y/n]: ",
+    printf("Are you sure? \033[0;1;91m%s will be overwritten if exists!\033[0m "
+           "[y/n]: ",
            argv[2]);
     prompt = fgetc(stdin);
     if (prompt != 'y' && prompt != 'Y') {
         printf("\033[0;91mexited\033[0m\n");
         return 3;
+    }
+
+    FILE *to_file = fopen(argv[2], "w"); // write to
+    if (to_file == NULL) {
+        printf("Error: Could not open file");
+        return 2;
     }
 
     int c, file_content_sz = 0;
