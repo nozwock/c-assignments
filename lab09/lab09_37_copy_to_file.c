@@ -48,7 +48,7 @@ int main(int argc, char **argv)
         printf("\033[0;1;92mSuccessfully copied contents of %s to %s\033[0m\n",
                argv[1], argv[2]);
     } else {
-        printf("\033[0;91mError:\033[0m Failed to copy contents\n");
+        printf("Error: Failed to copy contents\n");
     }
 
     free(file_content);
