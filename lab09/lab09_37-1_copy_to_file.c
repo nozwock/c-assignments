@@ -17,14 +17,14 @@ int main(int argc, char **argv)
     prompt = fgetc(stdin);
     if (prompt != 'y' && prompt != 'Y') {
         printf("\033[0;91mexited\033[0m\n");
-        return 3;
+        return 2;
     }
 
     FILE *from_file = fopen(argv[1], "r"); // read from
     FILE *to_file = fopen(argv[2], "w");   // write to
     if (from_file == NULL || to_file == NULL) {
         printf("Error: Could not open file");
-        return 2;
+        return 3;
     }
 
     char c;
