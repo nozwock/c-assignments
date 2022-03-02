@@ -35,15 +35,11 @@ int main(int argc, char **argv)
     int c, file_content_sz = 0;
     char *file_content = malloc(
         file_content_sz + 1 * sizeof(*file_content)); // extra space for '\0'
-    do {
-        c = fgetc(from_file);
-        if (c == EOF) {
-            continue;
-        }
+    while ((c = fgetc(from_file)) != EOF) {
         file_content = realloc(file_content,
                                ++file_content_sz + 1 * sizeof(*file_content));
         file_content[file_content_sz - 1] = c;
-    } while (c != EOF);
+    }
     file_content[file_content_sz] = '\0';
 
     if (fprintf(to_file, "%s", file_content)) {
