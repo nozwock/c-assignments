@@ -4,6 +4,7 @@
 int main(int argc, char **argv)
 {
     if (argc != 3) {
+        printf("Copy contents of 1st file to 2nd file\n");
         printf("Usage: %s [FILE] [FILE]\n", argv[0]);
         return 1;
     }
