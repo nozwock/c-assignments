@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "../lib/helpers.h"
 #include "../lib/sort.h"
 
