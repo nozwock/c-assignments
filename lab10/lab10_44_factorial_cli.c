@@ -9,6 +9,7 @@ int main(int argc, char **argv)
         printf("Usage: %s [INT]\n", argv[0]);
         return 1;
     }
+
     uint64_t factorial;
     if ((factorial = get_factorial(atoi(argv[1]))) < UINT64_MAX / 10) {
         printf("%lu\n", factorial);
