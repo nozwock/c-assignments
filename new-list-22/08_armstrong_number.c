@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-bool is_armstrong(int);
+bool is_armstrong(int num);
 
 int main(void)
 {
