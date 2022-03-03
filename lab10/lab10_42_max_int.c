@@ -9,6 +9,7 @@
 
 int main(void)
 {
+    // set seed with current time
     srand(time(0));
 
     int dynamic_arr_sz = 20;
