@@ -25,5 +25,7 @@ int main(void)
     scanf("%f", &marks);
 
     // displaying
-    printf("%s\n%d\n%s\n%.2f\n", _name, age, _gender, marks);
+    printf("\n");
+    printf("name: %s\nage: %d\ngender: %s\n12th marks: %.2f\n", _name, age,
+           _gender, marks);
 }
