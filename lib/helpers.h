@@ -20,8 +20,8 @@ void get_reversed_string(char[], char[]);
 bool is_armstrong(int);
 bool is_prime(int);
 
-unsigned long long get_factorial(int);
-unsigned long long get_factorial_recurv(int);
+uint64_t get_factorial(int);
+uint64_t get_factorial_recurv(int);
 
 ArrWithSize_int64_t get_fibonacci_arr(int);
 ArrWithSize_int64_t get_prime_arr(int, int);

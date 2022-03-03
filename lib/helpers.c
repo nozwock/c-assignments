@@ -1,6 +1,7 @@
 #include "helpers.h"
 #include <math.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdlib.h>
 
 int get_string_length(char str[])
@@ -63,10 +64,10 @@ bool is_armstrong(int num)
     return false;
 }
 
-unsigned long long get_factorial(int num)
+uint64_t get_factorial(int num)
 {
     // for +ve only
-    unsigned long long out = 1;
+    uint64_t out = 1;
     if (num < 0) {
         return 0;
     }
@@ -76,7 +77,7 @@ unsigned long long get_factorial(int num)
     return out;
 }
 
-unsigned long long get_factorial_recurv(int num)
+uint64_t get_factorial_recurv(int num)
 {
     // for +ve only
     if (num < 0) {
