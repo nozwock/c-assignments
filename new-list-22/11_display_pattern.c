@@ -13,6 +13,8 @@ int main(void)
         printf("\b\n");
     }
 
+    printf("\n");
+
     //   *
     //  * *
     // * * *
@@ -25,5 +27,27 @@ int main(void)
             printf("*");
         }
         printf("\b\n");
+    }
+
+    printf("\n");
+
+    // AAAAA
+    // A   A
+    // A   A
+    // A   A
+    // AAAAA
+    int pattern3_sz = 5;
+    for (int i = 1; i <= pattern3_sz; i++) {
+        if (i == 1 || i == pattern3_sz) {
+            for (int j = 0; j < pattern3_sz; j++) {
+                printf("A");
+            }
+            printf("\n");
+            continue;
+        }
+        printf("A");
+        printf("%*s", pattern2_sz - 2, ""); // or just use loops
+        printf("A");
+        printf("\n");
     }
 }
