@@ -17,7 +17,7 @@ int main(void)
     scanf("%d%*c", &age);
 
     // pointer to a gender string in buffer
-    _gender = _name + strlen(_name) + 2;
+    _gender = &_name[strlen(_name) + 2];
     printf("enter your gender: ");
     scanf("%[^\n]s%*c", _gender); // gender
 
