@@ -14,7 +14,7 @@ int main(void)
 
     printf("\ngiven string: %s\n", _str);
 
-    char sorted_str[1000];
+    char *sorted_str = &_str[strlen(_str) + 2];
     strcpy(sorted_str, _str);
     bubble_sort_string(sorted_str);
     printf("sorted string: %s\n", sorted_str);
