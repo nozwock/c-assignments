@@ -19,7 +19,7 @@ bool is_prime(int num)
     if (num < 1) {
         return false;
     }
-    for (int i = 2; i <= sqrt(num); i++) {
+    for (int i = 2, sqrt_num = sqrt(num); i <= sqrt_num; i++) {
         if (num % i == 0) {
             return false;
         }
