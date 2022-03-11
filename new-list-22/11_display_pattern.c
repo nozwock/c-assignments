@@ -23,10 +23,10 @@ int main(void)
     printf("\n");
 
     //     *
-    //    * *
-    //   * * *
-    //  * * * *
-    // * * * * *
+    //    ***
+    //   *****
+    //  *******
+    // *********
     // for reference:
     // http://www.cplusplus.com/reference/cstdio/printf/
     for (int i = 1; i <= rows; i++) {
