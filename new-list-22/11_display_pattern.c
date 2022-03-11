@@ -2,11 +2,18 @@
 
 int main(void)
 {
+    int rows;
+    printf("enter num of rows: ");
+    scanf("%d%*c", &rows);
+
+    printf("\n");
+
+    // 5 4 3 2 1
+    // 4 3 2 1
     // 3 2 1
     // 2 1
     // 1
-    int pattern1_sz = 5;
-    for (int i = pattern1_sz; i >= 1; i--) {
+    for (int i = rows; i >= 1; i--) {
         for (int j = i; j >= 1; j--) {
             printf("%d ", j);
         }
@@ -15,14 +22,18 @@ int main(void)
 
     printf("\n");
 
-    //   *
-    //  * *
-    // * * *
+    //     *
+    //    * *
+    //   * * *
+    //  * * * *
+    // * * * * *
     // for reference:
     // http://www.cplusplus.com/reference/cstdio/printf/
-    int pattern2_sz = 5;
-    for (int i = 1; i <= pattern2_sz; i++) {
-        printf("%*s", pattern2_sz - i, ""); // or just use loops
+    for (int i = 1; i <= rows; i++) {
+        for (int k = 0; k < rows - i; k++) {
+            printf(" ");
+        }
+        // printf("%*s", rows - i, ""); // or just use loops
         for (int j = i; j >= 2 - i; j--) {
             printf("*");
         }
@@ -36,18 +47,16 @@ int main(void)
     // A   A
     // A   A
     // AAAAA
-    int pattern3_sz = 5;
-    for (int i = 1; i <= pattern3_sz; i++) {
-        if (i == 1 || i == pattern3_sz) {
-            for (int j = 0; j < pattern3_sz; j++) {
+    for (int i = 1; i <= rows; i++) {
+        if (i == 1 || i == rows) {
+            for (int j = 0; j < rows; j++) {
                 printf("A");
             }
             printf("\n");
             continue;
         }
         printf("A");
-        printf("%*s", pattern2_sz - 2, ""); // or just use loops
-        printf("A");
-        printf("\n");
+        printf("%*s", rows - 2, ""); // or just use loops
+        printf("A\n");
     }
 }
