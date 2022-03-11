@@ -27,12 +27,15 @@ int main(int argc, char **argv)
     }
 
     char c;
+    int char_count;
     while ((c = fgetc(from_file)) != EOF) {
+        char_count++;
         fputc(c, to_file); // write char by char
     }
 
     printf("\033[0;1;92mSuccessfully copied contents of %s to %s\033[0m\n",
            argv[1], argv[2]);
+    printf("char count: %d\n", char_count);
 
     fclose(from_file);
     fclose(to_file);
