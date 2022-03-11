@@ -10,8 +10,7 @@ int main(void)
     printf("Enter values for sides of triangle: ");
     scanf("%lf %lf %lf", &a, &b, &c);
 
-    printf("\n");
-    printf("entered sides are: %.2lf %.2lf %.2lf\n", a, b, c);
+    printf("\nentered sides are: %.2lf %.2lf %.2lf\n", a, b, c);
     printf("area of triangle = %.2lf\n", get_triangle_area(a, b, c));
 }
 

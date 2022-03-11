@@ -24,11 +24,13 @@ bool is_armstrong(int num)
     int tmp = num, rem, sum = 0;
     int ndigits = 0;
 
+    // counting total number of digits
     while (tmp > 0) {
         tmp /= 10;
         ndigits++;
     }
 
+    // calc sum of (each digit pow to total number of digits)
     tmp = num;
     while (tmp > 0) {
         rem = tmp % 10;
